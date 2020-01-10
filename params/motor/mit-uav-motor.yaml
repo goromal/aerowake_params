@@ -1,0 +1,23 @@
+## These values calculated from matlab/motor_analysis.m
+
+# Thrust polynomial, mapping PWM [1000-2000] to thrust [N]
+rotor_F: [1.5519e-05, -0.029526, 14.0511]
+
+# Torque polynomial, mapping PWM [1000-2000] to torque [N-m]
+rotor_T: [2.4684e-07, -0.0004531, 0.20679]
+
+rotor_inertia: 3.7404e-05 #
+rotor_max_thrust: 20.0    #
+
+rotor_tau_up: 0.2164   #
+rotor_tau_down: 0.1644 #
+
+motor:
+  # Angular speed polynomial, mapping normalized PWM [0-1] to angular speed [rad/s]
+  k_omega_poly: [919.7087, 32.9194]
+
+  # Motor thrust constant estimation, mapping squared angular speed [rad/s] to thrust [N]
+  kn: 1.9638e-05
+
+  # Motor torque constant estimation, mapping squared angular speed [rad/s] to torque [N-m]
+  km: 0.018641

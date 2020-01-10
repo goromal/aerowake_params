@@ -1,0 +1,33 @@
+# TODO: AUGMENT FOR USE WITH THE GAZEBO-LESS SIM
+
+ground_effect: [-55.3516, 181.8265, -203.9874, 85.3735, -7.6619]
+ground_altitude: 20
+
+# Sensor Noise Parameters (These are empirically-determined)
+
+gyro_stdev: 0.0 # 0.25
+gyro_bias_range: 0.0 # 0.25
+gyro_bias_walk_stdev: 0.00000 # 0.00001
+
+acc_stdev: 0.0 # 0.561
+acc_bias_range: 0.0 # 0.6
+acc_bias_walk_stdev: 0.00000 # 0.00001
+
+baro_stdev: 4.0
+baro_bias_range: 500
+baro_bias_walk_stdev: 0.1
+
+sonar_stdev: 0.03
+sonar_min_range: 0.25
+sonar_max_range: 8.0
+
+airspeed_stdev: 1.15
+airspeed_bias_range: 0.15
+airspeed_bias_walk_stdev: 0.001
+
+mag_stdev: 1.15
+mag_bias_range: 0.15
+mag_bias_walk_stdev: 0.001
+
+inclination: 1.14316156541
+declination: 0.198584539676

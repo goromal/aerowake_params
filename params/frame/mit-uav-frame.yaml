@@ -1,0 +1,27 @@
+## These values calculated from physical measurements of the MIT UAV platform
+
+mass: 2.27201
+uav_ixx: 0.04
+uav_iyy: 0.04
+uav_izz: 0.0815
+
+linear_mu: 0.05    #
+angular_mu: 0.0005 #
+
+num_rotors: 4
+
+rotor_positions: [ 0.251,  0.251, 0.0,
+                  -0.251,  0.251, 0.0,
+                  -0.251, -0.251, 0.0,
+                   0.251, -0.251, 0.0]
+
+# rotor_vector_normal: [-0.0493,  0.0493, -0.9976,
+#                       -0.0493, -0.0493, -0.9976,
+#                       -0.0493, -0.0493, -0.9976,
+#                       -0.0493,  0.0493, -0.9976]
+rotor_vector_normal: [0,0,-1,
+                      0,0,-1,
+                      0,0,-1,
+                      0,0,-1]
+
+rotor_rotation_directions: [-1, 1, -1, 1]
