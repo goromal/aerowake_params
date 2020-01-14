@@ -1,7 +1,25 @@
 # TODO: AUGMENT FOR USE WITH THE GAZEBO-LESS SIM
 
+gravity: 9.80665
+
+truth_x0: [0, 0, 0,    # POS (Inertial NED frame, m)
+           1, 0, 0, 0, # ATT (quaternion w-x-y-z)
+           0, 0, 0,    # VEL (Body frame, m/s)
+           0, 0, 0]    # OMEGA (Body frame, rad/s)
+
 ground_effect: [-55.3516, 181.8265, -203.9874, 85.3735, -7.6619]
 ground_altitude: 20
+
+# IP address of MAVlink serial bind host
+bind_host: localhost
+# Port of MAVlink serial bind host
+bind_port: 14525
+# IP address of MAVlink serial remote host
+remote_host: localhost
+# Port of MAVlink serial remote host
+remote_port: 14520
+# IMU update rate (cycles/s)
+imu_update_rate: 1000.0
 
 # Sensor Noise Parameters (These are empirically-determined)
 

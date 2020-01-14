@@ -16,8 +16,19 @@ motor:
   # Angular speed polynomial, mapping normalized PWM [0-1] to angular speed [rad/s]
   k_omega_poly: [919.7087, 32.9194]
 
-  # Motor thrust constant estimation, mapping squared angular speed [rad/s] to thrust [N]
+  # Rotor blade stiffness (N m/rad)
+  motor_k_beta: 0.7
+
+  # The sum of the products of the rotor drag coefficient
+  # with individual rotor angular speeds (kg rad/s)
+  motor_k_1: 0.57
+
+  # Motor "thrust coefficient" estimation, mapping squared angular speed [rad/s] to thrust [N]
   kn: 1.9638e-05
 
   # Motor torque constant estimation, mapping squared angular speed [rad/s] to torque [N-m]
   km: 0.018641
+
+  # Constant that determines sensitivity to rotor moments from
+  # the blade flapping effect
+  motor_k_f: 0.05 # 0.5 has the UAV doing occasional gymnastic moves

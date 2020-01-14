@@ -25,3 +25,9 @@ rotor_vector_normal: [0,0,-1,
                       0,0,-1]
 
 rotor_rotation_directions: [-1, 1, -1, 1]
+
+# Equivalent moment arm length along body x, y, z
+# axes from UAV center to tether attachment point (m)
+uav_tether_x_moment_arm: 0.013
+uav_tether_y_moment_arm: 0.0
+uav_tether_z_moment_arm: 0.017
