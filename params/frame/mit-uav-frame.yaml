@@ -31,3 +31,12 @@ rotor_rotation_directions: [-1, 1, -1, 1]
 uav_tether_x_moment_arm: 0.013
 uav_tether_y_moment_arm: 0.0
 uav_tether_z_moment_arm: 0.017
+
+# Transform from UAV frame to camera (CAM) frame
+# Expressed actively (or using robotics convention: CAM -> UAV)
+# because of how Xformd objects are initialized
+# [x_UAV (m), y_UAV (m), z_UAV (m),
+#  roll (rad), pitch (rad), yaw (rad)]
+# (yaw about z -> pitch about y -> roll about x)
+T_UAV_CAM: [  0.0762, 0.0,      0.0,
+            1.570796, 0.0, 1.570796]
