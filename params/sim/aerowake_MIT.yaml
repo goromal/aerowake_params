@@ -104,7 +104,7 @@ wind_z_bound: 0.0 # 0.1
 
 # Speed of the boat, which moves in a straight line
 # in the inertial North direction (m/s)
-boat_speed: 1.0 # 2.0
+boat_speed: 0.0 # 1.0 # 2.0
 
 ###################################################
 ################ TETHER PARAMETERS ################
