@@ -1,0 +1,4 @@
+# [x, y, z, roll, pitch, yaw] (m, rad)
+p_SHIP_BGPS: [0.0, 0.0, 0.0] # <<<< ++++ <<<<
+
+# estimator will need a real-time estimate of the ship's heading ++++
