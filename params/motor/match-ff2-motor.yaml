@@ -33,21 +33,22 @@ torque_poly: [5.14396e-07, -0.00108924, 0.577168 , # 220
               5.14396e-07, -0.00108924, 0.577168 , # 220
               3.55684e-07, -0.000749856, 0.390032] # -120
 
-# ASSUMPTION: PWM=1500 CORRESPONDS TO OMEGA=575rad/s (see motor-realism.nb)
-# Angular speed linear coefficients, mapping PWM [1000-2000] to angular speed [rad/s]
-omega_poly: [1244.9683, -59.3649, # FILL OUT ++++
-             1235.6707, -59.2614,
-             1196.9169, -53.1203,
-             1189.7361, -53.4719]
-
-# Motor torque constant coefficients, mapping squared angular speed [rad/s] to torque [N-m]
-km: [3.02908e-07, # FIX ++++
-     0.018335,
-     0.018902,
-     0.016812]
+# THRUST-TORQUE-BASED DERIVATION FOR omega_poly, km, kn
+# ASSUMPTION: normalized PWM=0.5 CORRESPONDS TO OMEGA=575rad/s (see motor-realism.nb)
+# Angular speed linear coefficients, mapping normalized PWM [0-1] to angular speed [rad/s]
+omega_poly: [1324.33, -87.1643,
+             1323.94, -86.971,
+             1321.43, -85.7138,
+             1320.97, -85.4864]
 
 # Motor thrust coefficients, mapping squared angular speed [rad/s] to thrust [N]
 kn: [1.43125e-05,
      1.41579e-05,
      1.32301e-05,
      1.30755e-05]
+
+# Motor torque constant coefficients, mapping squared angular speed [rad/s] to torque [N-m]
+km: [2.93296e-07,
+     2.02921e-07,
+     2.94585e-07,
+     2.03834e-07]

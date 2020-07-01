@@ -38,9 +38,9 @@ uav_tether_z_moment_arm: 0.017
 # [x_UAV (m), y_UAV (m), z_UAV (m),
 #  roll (rad), pitch (rad), yaw (rad)]
 # (yaw about z -> pitch about y -> roll about x)
-# T_UAV_CAM: [     0.0, 0.0,    0.0,
+# T_UAV_CAM: [  0.0762, 0.0,    0.0,
 #             1.570796, 0.0, 1.570796]
 T_UAV_CAM: [  0.0762, 0.0,    0.0,
-            1.570796, 0.0, 1.570796]
+            1.308996,  0.0, 1.570796] # pointed slightly down (15 deg)
 
 p_b2g: [-0.07, 0.0, -0.15]

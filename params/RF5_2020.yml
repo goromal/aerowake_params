@@ -27,7 +27,7 @@
 - {name: FILTER_QUAD_INT, type: 6, value: 1}
 - {name: FILTER_USE_ACC, type: 6, value: 1}
 - {name: FIXED_WING, type: 6, value: 0}
-- {name: GROUND_LEVEL, type: 9, value: 1387}
+- {name: GROUND_LEVEL, type: 9, value: 20}
 - {name: GYROXY_LPF_ALPHA, type: 9, value: 0.300000011920929}
 - {name: GYROZ_LPF_ALPHA, type: 9, value: 0.300000011920929}
 - {name: GYRO_X_BIAS, type: 9, value: 0.003555598668754101}

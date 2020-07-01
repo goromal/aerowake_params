@@ -12,8 +12,7 @@ camera:
     frame_rate: 5 # 20
     auto_exposure: False
     exposure: 0 # -7.58496 is minimum
-    shutter_speed: 0.046 # 0.005
+    shutter_speed: 0.0075 # 0.046 # 0.005
     auto_shutter: False
     auto_gain: False
     gain: -2.5 # -10 to 10
-

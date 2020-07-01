@@ -6,8 +6,8 @@ Q_position: 0.001
 Q_velocity: 0.001
 Q_attitude: 0.001
 Q_angularvelocity: 0.01
-Q_external_FxFy: 0.5
-Q_external_Fz: 0.5
+Q_external_FxFy: 0.01 # 0.5
+Q_external_Fz: 0.1 # 0.5
 Q_external_Myaw: 0.05
 
 # Filter tuning

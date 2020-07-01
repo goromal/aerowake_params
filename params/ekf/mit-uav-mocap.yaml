@@ -3,15 +3,21 @@ accel_noise_stdev: 0.5
 gyro_noise_stdev: 0.02
 position_noise_stdev: 0.0001 # Mocap
 attitude_noise_stdev: 0.0001 # Mocap
+vision_attitude_noise_stdev: 0.01 # Vision System (Attitude Only)
+use_manual_pos_noise: false
+pos_noise_stdev: 0.5 # position sensor
+use_manual_vel_noise: false
+vel_noise_stdev: 0.1 # velocity sensor
 baro_pressure_noise_stdev: 2.0
 range_noise_stdev: 0.1
 manual_gps_noise: false # choose noise params for GPS or use the values reported from the message topic
+# these are unused because manual_gps_noise is false
 gps_horizontal_stdev: 0.021
 gps_vertical_stdev: 0.04
 gps_speed_stdev: 0.2
 
 # Constant Parameeters
-p_b2g: [0, 0, 0] # position from body frame to gps frame
+# p_b2g: [0, 0, 0] # position from body frame to gps frame
 
 ## Additive Process Noise
 Qx: [0.000, 0.000, 0.000,       # pos
@@ -49,10 +55,13 @@ lambda: [1.0, 1.0, 1.0,       # pos
 enable_partial_update: true
 enable_out_of_order: false # TODO this isnt fully implemented
 use_mocap: true
+use_vision: false
 use_gnss: false
 use_baro: false
 use_range: false
 use_zero_vel: true
+use_pos: false
+use_vel: false
 
 ## Is_flying checks
 enable_arm_check: false # require armed before checking for is_flying
